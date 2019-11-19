@@ -1,0 +1,106 @@
+@import url("font-awesome.css");
+@import url("reset.css");
+@import url("variables.css");
+@import url("responsive.css");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.red {
+    color: var(--red);
+    font-size: 20px;
+}
+
+.movies {
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    width: 100%;
+}
+
+.primary-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--dark-black);
+    text-shadow: 0 0 0 #000;
+}
+
+.secondary-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--dark-black);
+}
+
+.para-text {
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.8em;
+    color: var(--light-black);
+}
+
+.logo {
+    font-size: 1.1em;
+    padding: 10px 40px 10px 20px;
+}
+
+.logo--link {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.latest__movies {
+    padding-top: 60px;
+    display: flex;
+}
+
+.trending__movies {
+    padding-top: 60px;
+    display: flex;
+}
+
+.popular__movies {
+    padding-top: 60px;
+    display: flex;
+}
+
+.related__movies {
+    padding-top: 60px;
+    display: flex;
+}
+
+.table {
+    width: 100%;
+}
+
+.tbody {
+    position: relative;
+    width: 100%;
+}
+
+.table tr {
+    line-height: 1.8em;
+}
+
+.table td {
+    margin-left: 28px;
+    display: flex;
+}
+
+.table th {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 25%;
+    color: var(--dark-black);
+}

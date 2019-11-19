@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All latest and trending movies list ">
+    <meta name="keywords" content="hollywood movies, action movies , romantic movies, movies">
+    <meta name="author" content="Sahil Chhabra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="import" id="primary-header" href="templates/header.html">
+    <link rel="import" id="card" href="templates/card.html">
+    <link rel="import" id="cardModal" href="templates/popup.html">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&display=swap" rel="stylesheet">
+    <title>Movies List App</title>
+</head>
+
+<body>
+    <main class="movies">
+        <!--header-->
+        <section class="movieapp__header">
+        </section>
+
+        <!-- latest movies section start here -->
+        <section class="latest__movies">
+            <div class="container">
+                <h2 class="primary-text">Latest</h2>
+                <div class="movies__listing" id="latest__listing">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Trending movies section start here -->
+        <section class="trending__movies">
+            <div class="container">
+                <h2 class="primary-text">Trending</h2>
+                <div class="movies__listing" id="trending_listing">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Watched movies section start here -->
+        <section class="popular__movies">
+            <div class="container">
+                <h2 class="primary-text">Most Watched</h2>
+                <div class="movies__listing" id="mostwatched__listing">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="assets/js/index.js" type="module"></script>
+
+</html>

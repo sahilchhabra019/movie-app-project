@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All latest and trending movies list ">
+    <meta name="keywords" content="hollywood movies, action movies , romantic movies, movies">
+    <meta name="author" content="Sahil Chhabra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="import" id="primary-header" href="templates/header.html">
+    <link rel="import" id="card" href="templates/card.html">
+    <link rel="import" id="cardModal" href="templates/popup.html">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&display=swap" rel="stylesheet">
+    <title>Search Movies</title>
+</head>
+
+<body>
+    <main class="movies">
+        <!--header-->
+        <section class="movieapp__header">
+        </section>
+
+        <!--search and filter-->
+        <section class="movie__filters">
+            <div class="container">
+                <article class="movie__search">
+                    <section class="searchby__title">
+                        <form>
+                            <input type="search" placeholder="Search here" id="search"><span class="serch__icon"><i
+                                    class="fa fa-search" aria-hidden="true"></i></span>
+                        </form>
+                    </section>
+                    <aside class="filterby___rating">
+                        <form>
+                            <label class="rating__label">Movie Rating</label>
+                            <input type="range" id="rangeslider" name="rating" min="0" max="5">
+                        </form>
+                        <ul class="range__labels">
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </aside>
+                </article>
+            </div>
+        </section>
+
+        <!--movie listing-->
+        <section class="filtered__data">
+            <div class="container">
+                <div class="movies__listing" id="listing">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="assets/js/explore.js" type="module"></script>
+</html>
