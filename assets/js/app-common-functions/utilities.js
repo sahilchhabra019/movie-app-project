@@ -10,8 +10,11 @@ var movieDetails = new LoadData();
 // movie generes function
 export let movieGenres = [];
 export async function loadMovieGenresData() {
-    movieGenres = await movieDetails.loadMovieGenres();
-    localStorage.setItem('movieGenres', JSON.stringify(movieGenres));
+    return new Promise(async (resolve, reject) => {
+        movieGenres = await movieDetails.loadMovieGenres();
+        localStorage.setItem('movieGenres', JSON.stringify(movieGenres));
+        resolve(movieGenres);
+    });
 }
 
 // movie rating function

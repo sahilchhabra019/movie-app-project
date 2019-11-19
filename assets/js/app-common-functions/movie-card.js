@@ -1,13 +1,13 @@
 import {
 	image_base_url,
-	ratingStar
+	ratingStar,
 } from './utilities.js'
-
-var movieGenres = localStorage.getItem('movieGenres');
-movieGenres = JSON.parse(movieGenres);
 
 // single movie card 
 export function createCard(movieData, elemId) {
+	var movieGenres = localStorage.getItem('movieGenres');
+	movieGenres = JSON.parse(movieGenres);
+	
 	elemId.innerHTML = '';
 	const card = document.querySelector("#card").import;
 	const template = card.querySelector("#movies-listing");

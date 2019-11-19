@@ -44,7 +44,7 @@ import {
   let filteredGenres = movieGenres.genres.filter(item => item.name.toLowerCase().includes(searchValue.toLocaleLowerCase())).map(item => item.id);
   let searchResult = uniqueData.filter(item => {
   //return item.title.toLowerCase().includes(searchValue.toLowerCase());
-  return item.genre_ids.filter(value => filteredGenres.includes(value)).length;
+  return item.genre_ids.filter(value => filteredGenres.includes(value)|| item.title.toLowerCase().includes(searchValue.toLowerCase())).length;
   })
   createCard(searchResult, listing);
   }

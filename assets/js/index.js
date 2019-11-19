@@ -18,6 +18,7 @@ import {
 
 var movieDetails = new LoadData();
 async function populateLatestData() {
+  await loadMovieGenresData();
   const movieData = await movieDetails.loadLatestMovieDetails();
   localStorage.setItem('latestDatalocal', JSON.stringify(movieData));
   const movielatestList = document.getElementById('latest__listing');
@@ -45,7 +46,6 @@ async function populateMostWachedData() {
 
 // function calling
 header();
-loadMovieGenresData();
-populateLatestData();
 populateTrendingData();
+populateLatestData();
 populateMostWachedData();
