@@ -43,11 +43,14 @@
     width: 100%;
     flex-wrap: wrap;
     padding-top: 25px;
-    justify-content: space-between;
+}
+
+.card__structure{
+    margin:1rem;
 }
 
 .movie__card {
-    width: 24%;
+    width: 25%;
     flex-wrap: wrap;
 }
 

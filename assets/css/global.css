@@ -34,7 +34,9 @@ body {
     color: var(--dark-black);
     text-shadow: 0 0 0 #000;
 }
-
+.margin-rl{
+margin:0 1rem;
+}
 .secondary-text {
     font-size: 1.2em;
     font-weight: 500;
@@ -60,17 +62,17 @@ body {
 }
 
 .latest__movies {
-    padding-top: 60px;
+    padding-top: 30px;
     display: flex;
 }
 
 .trending__movies {
-    padding-top: 60px;
+    padding-top: 30px;
     display: flex;
 }
 
 .popular__movies {
-    padding-top: 60px;
+    padding-top: 30px;
     display: flex;
 }
 
