@@ -16,7 +16,7 @@ import {
   header
 } from './app-common-functions/header.js';
 
-var movieDetails = new LoadData();
+let movieDetails = new LoadData();
 async function populateLatestData() {
   await loadMovieGenresData();
   const movieData = await movieDetails.loadLatestMovieDetails();

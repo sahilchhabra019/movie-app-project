@@ -29,7 +29,6 @@ export function ratingStar(rating) {
 // get Director
 export function getDirector(singleMovieData) {
     var directors = singleMovieData.credits.crew.filter(movieDirector => movieDirector.job === 'Director')[0];
-    console.log(directors)
     return directors.name;
 }
 

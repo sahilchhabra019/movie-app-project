@@ -9,27 +9,28 @@ import {
     LoadData
 } from '../load-data/load-api-data.js'
 
-var singleMovie = new LoadData();
+let singleMovie = new LoadData();
 
 // single movie popup function
 export function addListeners(movieData, movieList) {
-    var movieCards = movieList.getElementsByClassName('movie-image');
+    let movieCards = movieList.getElementsByClassName('movie-image');
 
-    var clickFunction = async function () {
-        var id = this.getAttribute("data-id");
-        var currentMovie = movieData.results.filter(movie => id == movie.id)[0];
-        var cardModal = document.querySelector("#cardModal").import;
+    let clickFunction = async function () {
+        let id = this.getAttribute("data-id");
+        let currentMovie = movieData.results.filter(movie => id == movie.id)[0];
+        let cardModal = document.querySelector("#cardModal").import;
         const template = cardModal.getElementById("modal-template");
         const modal = template.content.querySelector(".modal");
         const modalNode = document.importNode(modal, true);
+
         // POPUP CONTENT START
 
         //for Movie Title
-        var moviePopupData = modalNode.querySelector(".primary-text");
+        let moviePopupData = modalNode.querySelector(".primary-text");
         moviePopupData.append(document.createTextNode(currentMovie.original_title));
 
         // for movie description
-        var moviePopupDescription = modalNode.querySelector(".movie__content p");
+        let moviePopupDescription = modalNode.querySelector(".movie__content p");
         moviePopupDescription.append(document.createTextNode(currentMovie.overview));
 
         // for movie image
@@ -64,8 +65,8 @@ export function addListeners(movieData, movieList) {
         modalNode.style.display = "block";
         document.body.append(modalNode);
 
-        var span = document.getElementsByClassName("modal__close")[0];
-        var spanBottom = document.getElementsByClassName("modal__close--bottom")[0];
+        let span = document.getElementsByClassName("modal__close")[0];
+        let spanBottom = document.getElementsByClassName("modal__close--bottom")[0];
         spanBottom.onclick = function () {
             document.querySelector('.modal').remove();
         }
@@ -74,7 +75,7 @@ export function addListeners(movieData, movieList) {
         }
     };
 
-    for (var i = 0; i < movieCards.length; i++) {
+    for (let i = 0; i < movieCards.length; i++) {
         movieCards[i].addEventListener('click', clickFunction, false);
     }
 }

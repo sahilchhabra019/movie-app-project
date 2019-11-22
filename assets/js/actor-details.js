@@ -69,7 +69,7 @@ async function movieActorDetails() {
         }
 
         // create html for actor filmography
-        for (var i = 0; i < groupedFimlo.length; i++) {
+        for (let i = 0; i < groupedFimlo.length; i++) {
             if (groupedFimlo[i].year) {
                 const Movieyear = document.querySelector('.year');
 

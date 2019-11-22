@@ -65,7 +65,6 @@ async function singleMovieDetails() {
 
         // for director
         const directorMovie = node.querySelector('.dir__data td');
-        console.log(directorMovie);
         directorMovie.appendChild(document.createTextNode(getDirector(movieDetails)));
 
         document.getElementById('main-details').append(node);

@@ -30,7 +30,7 @@ export function createCard(movieData, elemId) {
 		// for movie generes
 		const currentGenres = movieGenres.genres.filter(genre => movieResults.genre_ids.includes(genre.id))
 		let finalGenres = '';
-		currentGenres.map(item => finalGenres += item.name + ', ');
+		currentGenres.slice(0, 4).map(item => finalGenres += item.name + ', ');
 		finalGenres = finalGenres.slice(0, -2);
 		const genres = node.querySelector('.movie__generes ul li')
 		genres.appendChild(document.createTextNode(finalGenres));
